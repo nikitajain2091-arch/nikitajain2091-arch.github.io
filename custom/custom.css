@@ -334,8 +334,8 @@ main {
 .page-container {
   display: grid;
   gap: 1rem;
-  width: min(100%, var(--nj-content-max));
-  margin-inline: auto;
+  width: 100%;
+  max-width: none;
 }
 
 .nj-home-shell > *,
@@ -638,7 +638,7 @@ main {
 
 .nj-proof-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   align-items: stretch;
 }
@@ -727,7 +727,7 @@ main {
 
 .nj-cover-grid {
   display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
   align-items: stretch;
 }
@@ -1482,7 +1482,7 @@ body.page-experience .project-module-text .module-text > div:nth-child(n + 4) {
 
 @media (max-width: 1200px) {
   .nj-cover-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 
