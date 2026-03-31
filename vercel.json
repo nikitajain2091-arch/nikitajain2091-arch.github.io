@@ -1,0 +1,10 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/work/",
+      "permanent": false
+    }
+  ]
+}
